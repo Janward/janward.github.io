@@ -434,8 +434,12 @@ document.addEventListener('DOMContentLoaded', () => {
         filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 // Toggle active class on buttons
-                filterButtons.forEach(b => b.classList.remove('active'));
+                filterButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-pressed', 'false');
+                });
                 btn.classList.add('active');
+                btn.setAttribute('aria-pressed', 'true');
 
                 const filterValue = btn.getAttribute('data-filter');
 

@@ -24,7 +24,7 @@
     <!-- Header / Navigation Bar -->
     <header class="navbar">
         <div class="navbar-container">
-            <a href="#" class="logo">
+            <a href="#hero" class="logo" aria-label="Kembali ke bagian awal">
                 <!-- <span class="logo-icon">&lt;/&gt;</span>-->
                 <img src="Logo.png" alt="Logo" class="logo-icon">
                 <span class="logo-text">Janward.<span>Alfredo</span></span>
@@ -458,10 +458,10 @@
                 </div>
 
                 <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">Semua Proyek</button>
-                    <button class="filter-btn" data-filter="servers">Infrastruktur &amp; Server</button>
-                    <button class="filter-btn" data-filter="networks">Jaringan</button>
-                    <button class="filter-btn" data-filter="security">Sistem Keamanan</button>
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Semua Proyek</button>
+                    <button type="button" class="filter-btn" data-filter="servers" aria-pressed="false">Infrastruktur &amp; Server</button>
+                    <button type="button" class="filter-btn" data-filter="networks" aria-pressed="false">Jaringan</button>
+                    <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Sistem Keamanan</button>
                 </div>
 
                 <div class="projects-grid">
@@ -710,12 +710,12 @@
                         <form id="contact-form" class="glass-form">
                             <div class="form-group">
                                 <label for="form-name">Nama Lengkap</label>
-                                <input type="text" id="form-name" placeholder="Masukkan nama lengkap Anda" required
+                                <input type="text" id="form-name" data-i18n="formNamePlaceholder" placeholder="Masukkan nama lengkap Anda" required
                                     autocomplete="name">
                             </div>
                             <div class="form-group">
                                 <label for="form-message">Pesan Anda</label>
-                                <textarea id="form-message" rows="5"
+                                <textarea id="form-message" rows="5" data-i18n="formMessagePlaceholder"
                                     placeholder="Tuliskan detail pesan atau pertanyaan Anda di sini..."
                                     required></textarea>
                             </div>

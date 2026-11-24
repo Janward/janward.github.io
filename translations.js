@@ -323,8 +323,10 @@ function setLanguage(lang) {
                 if (element.hasAttribute('placeholder')) {
                     element.placeholder = translations[lang][key];
                 }
-            } else {
+            } else if (translations[lang][key].includes('<')) {
                 element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
             }
         }
     });
@@ -337,14 +339,14 @@ function normalizeStr(str) {
 // Auto-tag elements on first load
 function autoTagElements() {
     const idDict = translations.id;
-    const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, span, a, label, button, strong, li, div');
+    const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, span, a, label, button, strong, li');
     
     const entries = Object.entries(idDict).sort((a, b) => b[1].length - a[1].length);
 
     for (const [key, value] of entries) {
         const normValue = normalizeStr(value);
         elements.forEach(el => {
-            if (!el.hasAttribute('data-i18n')) {
+            if (!el.hasAttribute('data-i18n') && el.children.length === 0) {
                 const normInner = normalizeStr(el.innerHTML);
                 const normText = normalizeStr(el.textContent);
                 if (normInner === normValue || normText === normValue) {
