@@ -29,7 +29,7 @@
                 <img src="Logo.png" alt="Logo" class="logo-icon">
                 <span class="logo-text">Janward.<span>Alfredo</span></span>
             </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -44,13 +44,14 @@
                     <li><a href="#terminal-section" class="nav-link">CLI Terminal</a></li>
                     <li><a href="#contact" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
                     <li>
-                        <select class="lang-dropdown" onchange="setLanguage(this.value)">
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
                             <option value="id">ID</option>
                             <option value="en">EN</option>
                         </select>
                     </li>
                 </ul>
             </nav>
+        </div>
     </header>
     <main class="main-content">
 
@@ -81,6 +82,9 @@
                                 </path>
                             </svg>
                             Coba CLI Terminal
+                        </a>
+                        <a href="Janward Alfredo - CV.pdf" class="btn btn-secondary" download>
+                            Unduh CV
                         </a>
                     </div>
 
@@ -667,7 +671,7 @@
                                 <div class="contact-text">
                                     <h4>Nomor Handphone / WA</h4>
                                     <a href="https://wa.me/62895611554304?text=halo%20Janward,%20saya%20ingin%20berdiskusi%20mengenai%20"
-                                        target="_blank">0895-6115-54304</a>
+                                        target="_blank" rel="noopener noreferrer">0895-6115-54304</a>
                                 </div>
                             </div>
 
@@ -680,7 +684,7 @@
                                 </div>
                                 <div class="contact-text">
                                     <h4>Lokasi Domisili</h4>
-                                    <a href="https://maps.app.goo.gl/bhtS1P35WSdB9VKb7" target="_blank">Cengkareng,
+                                    <a href="https://maps.app.goo.gl/bhtS1P35WSdB9VKb7" target="_blank" rel="noopener noreferrer">Cengkareng,
                                         Jakarta Barat, DKI Jakarta</a>
                                 </div>
                             </div>
@@ -695,7 +699,7 @@
                                 <div class="contact-text">
                                     <h4>LinkedIn</h4>
                                     <a href="https://www.linkedin.com/in/janward-alfredo-2741981b7/"
-                                        target="_blank">Janward Alfredo</a>
+                                        target="_blank" rel="noopener noreferrer">Janward Alfredo</a>
                                 </div>
                             </div>
                         </div>
@@ -703,8 +707,7 @@
 
                     <!-- Contact Form -->
                     <div class="contact-form-container animate-right">
-                        <form id="contact-form" class="glass-form"
-                            onsubmit="event.preventDefault(); window.open('https://wa.me/62895611554304?text=halo,%20saya%20' + encodeURIComponent(document.getElementById('form-name').value) + ',%20' + encodeURIComponent(document.getElementById('form-message').value), '_blank');">
+                        <form id="contact-form" class="glass-form">
                             <div class="form-group">
                                 <label for="form-name">Nama Lengkap</label>
                                 <input type="text" id="form-name" placeholder="Masukkan nama lengkap Anda" required
