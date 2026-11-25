@@ -300,8 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 `Email      : ajanward@gmail.com\n` +
                 `Handphone  : 0895-6115-54304\n` +
                 `Alamat     : Cengkareng, Jakarta Barat, DKI Jakarta\n` +
-                `LinkedIn   : linkedin.com/in/janward-alfredo (Dummy)\n` +
-                `GitHub     : github.com/janward-alfredo (Dummy)`
+                `LinkedIn   : linkedin.com/in/janward-alfredo-2741981b7\n` +
+                `GitHub     : github.com/janward`
         };
 
         const printLine = (text, className = '') => {
@@ -482,8 +482,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Collect Form data
             const name = document.getElementById('form-name').value;
-            const email = document.getElementById('form-email').value;
-            const subject = document.getElementById('form-subject').value;
+            // (kolom email/subjek tidak ada di formulir; pesan dikirim lewat WhatsApp)
+            // (subjek tidak ada di formulir)
             const message = document.getElementById('form-message').value;
 
             formStatus.className = 'form-status';
@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Simulate Network Request to server
             setTimeout(() => {
                 formStatus.className = 'form-status success';
-                formStatus.innerHTML = '[Success] Pesan Anda telah berhasil terkirim ke Inbox Janward Alfredo. Terima kasih!';
+                formStatus.innerHTML = '[Success] WhatsApp dibuka di tab baru. Silakan kirim pesan Anda dari sana. Terima kasih!';
                 contactForm.reset();
             }, 1800);
         });

@@ -20,7 +20,7 @@ const translations = {
         locationText: "Cengkareng, West Jakarta",
 
         // Dashboard
-        dashboardTitle: "SYSTEM MONITOR - LIVE NODE",
+        dashboardTitle: "SYSTEM MONITOR - DEMO",
         dashboardUptime: "Uptime: 99.98%",
         graphLatency: "Latency Monitor (ICMP)",
         statsPhysicalServers: "Physical Servers",
@@ -167,7 +167,7 @@ const translations = {
         locationText: "Cengkareng, Jakarta Barat",
 
         // Dashboard
-        dashboardTitle: "SYSTEM MONITOR - LIVE NODE",
+        dashboardTitle: "SYSTEM MONITOR - DEMO",
         dashboardUptime: "Uptime: 99.98%",
         graphLatency: "Latency Monitor (ICMP)",
         statsPhysicalServers: "Physical Servers",
