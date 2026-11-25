@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
         });
 
         // Close menu when clicking link
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -301,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `Handphone  : 0895-6115-54304\n` +
                 `Alamat     : Cengkareng, Jakarta Barat, DKI Jakarta\n` +
                 `LinkedIn   : linkedin.com/in/janward-alfredo-2741981b7\n` +
-                `GitHub     : github.com/janward`
+                `Website    : https://janward.github.io/`
         };
 
         const printLine = (text, className = '') => {
@@ -310,6 +312,12 @@ document.addEventListener('DOMContentLoaded', () => {
             line.innerHTML = text;
             terminalOutput.appendChild(line);
             terminalScreen.scrollTop = terminalScreen.scrollHeight;
+        };
+
+        const escapeHtml = (value) => {
+            const element = document.createElement('span');
+            element.textContent = value;
+            return element.innerHTML;
         };
 
         const processCommand = (rawInput) => {
@@ -321,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
             historyIndex = commandHistory.length;
 
             // Echo input
-            printLine(`guest@janward-cli:~$ ${input}`, 'text-muted');
+            printLine(`guest@janward-cli:~$ ${escapeHtml(input)}`, 'text-muted');
 
             const parts = input.split(' ');
             const cmd = parts[0].toLowerCase();
@@ -364,16 +372,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case 'ping':
                     const host = arg || 'janward-alfredo.id';
-                    printLine(`PING ${host} (192.168.1.100) 56(84) bytes of data.`, 'text-cyan');
+                    const safeHost = escapeHtml(host);
+                    printLine(`PING ${safeHost} (192.168.1.100) 56(84) bytes of data.`, 'text-cyan');
 
                     let seq = 1;
                     const interval = setInterval(() => {
                         const time = (Math.random() * 5 + 8).toFixed(2);
-                        printLine(`64 bytes from 192.168.1.100 (${host}): icmp_seq=${seq} ttl=64 time=${time} ms`);
+                        printLine(`64 bytes from 192.168.1.100 (${safeHost}): icmp_seq=${seq} ttl=64 time=${time} ms`);
                         seq++;
                         if (seq > 4) {
                             clearInterval(interval);
-                            printLine(`--- ${host} ping statistics ---`);
+                            printLine(`--- ${safeHost} ping statistics ---`);
                             printLine(`4 packets transmitted, 4 received, 0% packet loss, time 3004ms`);
                             printLine(`rtt min/avg/max/mdev = 8.12/10.45/13.84/1.24 ms`, 'text-cyan');
                             terminalInput.disabled = false;
@@ -385,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     terminalInput.disabled = true;
                     break;
                 default:
-                    printLine(`Command not found: <span class="text-red">${cmd}</span>. Ketik <span class="text-cyan">help</span> untuk daftar perintah.`, 'text-light');
+                    printLine(`Command not found: <span class="text-red">${escapeHtml(cmd)}</span>. Ketik <span class="text-cyan">help</span> untuk daftar perintah.`, 'text-light');
             }
         };
 
@@ -425,8 +434,12 @@ document.addEventListener('DOMContentLoaded', () => {
         filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 // Toggle active class on buttons
-                filterButtons.forEach(b => b.classList.remove('active'));
+                filterButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-pressed', 'false');
+                });
                 btn.classList.add('active');
+                btn.setAttribute('aria-pressed', 'true');
 
                 const filterValue = btn.getAttribute('data-filter');
 
@@ -480,21 +493,21 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Collect Form data
-            const name = document.getElementById('form-name').value;
-            // (kolom email/subjek tidak ada di formulir; pesan dikirim lewat WhatsApp)
-            // (subjek tidak ada di formulir)
-            const message = document.getElementById('form-message').value;
+            const name = document.getElementById('form-name').value.trim();
+            const message = document.getElementById('form-message').value.trim();
 
-            formStatus.className = 'form-status';
-            formStatus.innerHTML = '[System] Mengirimkan pesan... mohon tunggu.';
+            if (!name || !message) {
+                formStatus.className = 'form-status';
+                formStatus.textContent = '[System] Lengkapi nama dan pesan terlebih dahulu.';
+                return;
+            }
 
-            // Simulate Network Request to server
-            setTimeout(() => {
-                formStatus.className = 'form-status success';
-                formStatus.innerHTML = '[Success] WhatsApp dibuka di tab baru. Silakan kirim pesan Anda dari sana. Terima kasih!';
-                contactForm.reset();
-            }, 1800);
+            const text = `Halo, saya ${name}. ${message}`;
+            const whatsappUrl = `https://wa.me/62895611554304?text=${encodeURIComponent(text)}`;
+
+            formStatus.className = 'form-status success';
+            formStatus.textContent = '[Success] Membuka WhatsApp untuk mengirim pesan...';
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         });
     }
 });
