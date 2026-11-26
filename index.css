@@ -52,7 +52,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 90%;
     background-color: var(--bg-dark);
 }
 
