@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `Lokasi: Cengkareng, Jakarta Barat\n` +
                 `Kontak: 0895611554304 | ajanward@gmail.com\n\n` +
                 `Seorang IT Infrastructure & Network Specialist berpengalaman 5+ tahun dalam mengelola server,\n` +
-                `virtualisasi (Proxmox), keamanan sistem (123+ CCTV), dan otomatisasi backup untuk mendukung\n` +
+                `virtualisasi (Proxmox), keamanan sistem (120+ CCTV), dan otomatisasi backup untuk mendukung\n` +
                 `stabilitas operasional &plusmn;200 pengguna. Lulusan S1 Teknik Informatika (Mikroskill, GPA 3.21).`,
 
             skills: `--- KEAHLIAN UTAMA ---\n` +
@@ -271,16 +271,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 `2. Virtualization      : Hypervisor Proxmox VE, Virtual Machines, Cluster monitoring\n` +
                 `3. Server OS           : Windows Server 2019, OpenMediaVault (OMV) NAS\n` +
                 `4. Cloud Services      : Nextcloud, Immich media server\n` +
-                `5. System Security     : Desain DVR/NVR, instalasi & setup 123+ CCTV titik kamera\n` +
+                `5. System Security     : Desain DVR/NVR, instalasi & setup 120+ CCTV titik kamera\n` +
                 `6. Automation & Backup : Penjadwalan database backup otomatis via scripting (PowerShell/Bash)\n` +
                 `7. Troubleshooting     : Diagnosa hardware server, disaster recovery (UPS, PSU, HDD recovery)`,
 
             experience: `--- RIWAYAT PENGALAMAN ---\n` +
                 `1. SPV IT Network & Hardware - PT Nico Urban Indonesia (Januari 2023 - Sekarang)\n` +
-                `   * Mengelola 7 server fisik & 5 virtual machine (Proxmox) untuk 200+ user.\n` +
+                `   * Mengelola 5+ server fisik & 5 virtual machine (Proxmox) untuk 200+ user.\n` +
                 `   * Administrasi Windows Server 2019, OMV, Nextcloud & Immich.\n` +
                 `   * Konfigurasi infrastruktur jaringan (Mikrotik & Managed Switches).\n` +
-                `   * Memimpin instalasi, upgrade, dan integrasi 123+ titik CCTV DVR/NVR.\n` +
+                `   * Memimpin instalasi, upgrade, dan integrasi 120+ titik CCTV DVR/NVR.\n` +
                 `   * Mengembangkan skema backup server & database terjadwal otomatis.\n` +
                 `   * Mengoordinasikan recovery hardware server akibat gangguan lonjakan daya listrik.\n` +
                 `2. Guru TIK - Yayasan Sultan Iskandar Muda Medan (Oktober 2018 - Maret 2022)\n` +
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `1. Automation Backup Server (Python/Shell Scripting)\n` +
                 `   - Memprogram backup otomatis terjadwal untuk database SQL & server files ke OMV NAS.\n` +
                 `2. Implementasi & Upgrade CCTV (DVR/NVR/IP Cameras)\n` +
-                `   - Memimpin instalasi 123 titik CCTV di area pabrik dengan segmentasi VLAN jaringan terpisah.\n` +
+                `   - Memimpin instalasi 120+ titik CCTV di area pabrik dengan segmentasi VLAN jaringan terpisah.\n` +
                 `3. Modernisasi Infrastruktur Server (Proxmox Virtualization)\n` +
                 `   - Migrasi server fisik lama ke hypervisor Proxmox dengan 5+ VM aktif, optimasi alokasi hardware.\n` +
                 `4. Manajemen Kabel Jaringan (LAN Cables & Rack Server)\n` +
