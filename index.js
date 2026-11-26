@@ -267,13 +267,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 `stabilitas operasional &plusmn;200 pengguna. Lulusan S1 Teknik Informatika (Mikroskill, GPA 3.21).`,
 
             skills: `--- KEAHLIAN UTAMA ---\n` +
-                `1. Network Management  : Mikrotik, managed switch, LAN/WAN, routing, VLAN\n` +
-                `2. Virtualization      : Hypervisor Proxmox VE, Virtual Machines, Cluster monitoring\n` +
-                `3. Server OS           : Windows Server 2019, OpenMediaVault (OMV) NAS\n` +
+                `1. Network & MikroTik  : LAN, subnetting, VLAN, firewall, port forwarding, link wireless Ubiquiti ±5 km\n` +
+                `2. Virtualization      : Proxmox VE, VirtualBox (produksi); Hyper-V (uji coba)\n` +
+                `3. Server & Sharing    : Windows Server, OpenMediaVault (OMV), folder sharing per divisi\n` +
                 `4. Cloud Services      : Nextcloud, Immich media server\n` +
-                `5. System Security     : Desain DVR/NVR, instalasi & setup 120+ CCTV titik kamera\n` +
-                `6. Automation & Backup : Penjadwalan database backup otomatis via scripting (PowerShell/Bash)\n` +
-                `7. Troubleshooting     : Diagnosa hardware server, disaster recovery (UPS, PSU, HDD recovery)`,
+                `5. System Security     : CCTV analog & IP, DVR/NVR, coaxial/UTP, 120+ titik kamera\n` +
+                `6. Automation & Backup : Jadwal backup via cron (Linux) & Task Scheduler (Windows)\n` +
+                `7. IT Support          : Troubleshooting komputer, laptop, printer; instalasi Windows; recovery (UPS, PSU, HDD)`,
 
             experience: `--- RIWAYAT PENGALAMAN ---\n` +
                 `1. SPV IT Network & Hardware - PT Nico Urban Indonesia (Januari 2023 - Sekarang)\n` +
