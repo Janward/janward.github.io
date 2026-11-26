@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <title>Detail Proyek | Janward Alfredo</title>
+    <link rel="canonical" href="https://janward.github.io/proyek.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Janward Alfredo">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Detail Proyek | Janward Alfredo">
+    <meta property="og:description" content="Proyek infrastruktur: automation backup, CCTV, modernisasi server Proxmox, penataan kabel, dan link wireless antar gedung.">
+    <meta property="og:url" content="https://janward.github.io/proyek.html">
+    <meta property="og:image" content="https://janward.github.io/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Canvas Node Network -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" aria-label="Kembali ke bagian awal">
+                <!-- <span class="logo-icon">&lt;/&gt;</span>-->
+                <img src="Logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Janward.<span>Alfredo</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li data-i18n="navHome"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li data-i18n="navAbout"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li data-i18n="navSkills"><a href="keahlian.html" class="nav-link">Keahlian</a></li>
+                    <li data-i18n="navExperience"><a href="pengalaman.html" class="nav-link">Pengalaman</a></li>
+                    <li data-i18n="navProjects"><a href="proyek.html" class="nav-link active">Proyek</a></li>
+                    <li data-i18n="navTerminal"><a href="terminal.html" class="nav-link">CLI Terminal</a></li>
+                    <li data-i18n="navContact"><a href="kontak.html" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Detail Proyek</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="project-filters">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Semua Proyek</button>
+                    <button type="button" class="filter-btn" data-filter="servers" aria-pressed="false">Infrastruktur &amp; Server</button>
+                    <button type="button" class="filter-btn" data-filter="networks" aria-pressed="false">Jaringan</button>
+                    <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Sistem Keamanan</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="servers">
+                        <div class="project-meta">
+                            <span class="project-cat">Servers &amp; Automation</span>
+                            <span class="project-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3>Automation Backup Server</h3>
+                        <p class="project-desc">Membangun script pencadangan otomatis (automation backup) terjadwal
+                            untuk database SQL dan direktori server ke media penyimpanan eksternal (NAS/OMV).</p>
+                        <ul class="project-highlights">
+                            <li>Mengurangi risiko human error dalam tugas pencadangan harian secara manual.</li>
+                            <li>Menggunakan shell scripting &amp; integrasi API penyimpanan awan internal.</li>
+                            <li>Mempercepat waktu pemulihan (Recovery Time Objective) saat terjadi kegagalan sistem.
+                            </li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Bash/PowerShell</span>
+                            <span>Automation</span>
+                            <span>NAS</span>
+                            <span>SQL Backup</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="security">
+                        <div class="project-meta">
+                            <span class="project-cat">Security &amp; Hardware</span>
+                            <span class="project-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3>Implementasi &amp; Upgrade CCTV (120+ Titik)</h3>
+                        <p class="project-desc">Memimpin proyek instalasi dan upgrade kamera pengawas berbasis IP &amp;
+                            Analog dengan total 120+ titik pantau di area pabrik dan gedung operasional.</p>
+                        <ul class="project-highlights">
+                            <li>Merancang diagram sebaran kamera untuk meniadakan area titik buta (blind spot).</li>
+                            <li>Mengkonfigurasi server DVR/NVR terpusat dengan akses streaming lokal yang aman bagi
+                                manajemen.</li>
+                            <li>Menghubungkan jaringan kamera ke VLAN terpisah untuk menghindari interferensi bandwidth
+                                data internal.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>DVR/NVR</span>
+                            <span>IP Camera</span>
+                            <span>VLAN</span>
+                            <span>Physical Security</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="servers">
+                        <div class="project-meta">
+                            <span class="project-cat">Virtualization</span>
+                            <span class="project-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3>Modernisasi Infrastruktur Server</h3>
+                        <p class="project-desc">Melakukan migrasi server fisik lama ke lingkungan virtualisasi berbasis
+                            Hypervisor Proxmox guna menghemat efisiensi penggunaan daya dan kapasitas hardware.</p>
+                        <ul class="project-highlights">
+                            <li>Membuat dan mengonfigurasi 5+ mesin virtual (VM) untuk membagi tugas web server, NAS,
+                                dan database.</li>
+                            <li>Mengimplementasikan alokasi beban resource CPU/RAM dinamis agar beban server seimbang.
+                            </li>
+                            <li>Membangun penyimpanan berbasis OMV, Nextcloud, dan Immich untuk file sharing
+                                kolaboratif.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Proxmox VE</span>
+                            <span>Windows Server</span>
+                            <span>OMV NAS</span>
+                            <span>Nextcloud</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="networks">
+                        <div class="project-meta">
+                            <span class="project-cat">Network Engineering</span>
+                            <span class="project-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3>Manajemen &amp; Penataan Kabel Jaringan</h3>
+                        <p class="project-desc">Mendesain ulang dan merapikan kabel distribusi jaringan (LAN) di ruang
+                            server pusat yang berantakan demi keamanan koneksi.</p>
+                        <ul class="project-highlights">
+                            <li>Melabeli ratusan port kabel LAN dan melakukan penataan rapi dengan patch panel baru.
+                            </li>
+                            <li>Mencegah risiko gangguan sinyal jaringan akibat lekukan kabel yang patah atau longgar.
+                            </li>
+                            <li>Mempersingkat waktu pencarian port bermasalah (troubleshooting) dari beberapa jam
+                                menjadi hitungan menit.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Cabling Management</span>
+                            <span>LAN Ports</span>
+                            <span>Patch Panel</span>
+                            <span>Rack Server</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-category="networks">
+                        <div class="project-meta">
+                            <span class="project-cat">Network Engineering</span>
+                            <span class="project-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3 data-i18n="project5Title">Link Wireless Point-to-Point Antar Gedung (±5 km)</h3>
+                        <p class="project-desc" data-i18n="project5Desc">Membangun jalur komunikasi nirkabel antar gedung berjarak sekitar 5 km menggunakan perangkat Ubiquiti, mulai dari estimasi jarak dan ketinggian, pemasangan antena, hingga penyelarasan link.</p>
+                        <ul class="project-highlights">
+                            <li data-i18n="project5H1">Menyelaraskan arah antena (pointing) antar empat lokasi gedung secara manual menggunakan kompas ponsel dan peta digital, disertai estimasi jarak dan perbedaan ketinggian antar gedung.</li>
+                            <li data-i18n="project5H2">Menggunakan perangkat Ubiquiti Rocket M5, Rocket M2, dan LiteBeam AC.</li>
+                            <li data-i18n="project5H3">Menangani pemasangan antena di tiang, dengan perawatan rutin kini didelegasikan ke tim teknisi.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Ubiquiti</span>
+                            <span>Rocket M5/M2</span>
+                            <span>LiteBeam AC</span>
+                            <span>P2P Wireless</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Janward Alfredo. Seluruh hak cipta dilindungi.</p>
+            <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JS | High Performance &amp; Light Weight</p>
+        </div>
+    </footer>
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>

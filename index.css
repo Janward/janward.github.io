@@ -1405,3 +1405,12 @@ section {
     background-color: var(--bg-dark);
     color: var(--text-light);
 }
+
+/* Jarak antara logo dan menu navigasi */
+.navbar-container {
+    gap: 2.5rem;
+}
+
+.nav-menu {
+    margin-left: auto;
+}

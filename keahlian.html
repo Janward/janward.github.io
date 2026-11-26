@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <title>Keahlian Teknis | Janward Alfredo</title>
+    <link rel="canonical" href="https://janward.github.io/keahlian.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Janward Alfredo">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Keahlian Teknis | Janward Alfredo">
+    <meta property="og:description" content="Keahlian jaringan MikroTik, virtualisasi Proxmox, server dan file sharing, CCTV, backup otomatis, dan IT support.">
+    <meta property="og:url" content="https://janward.github.io/keahlian.html">
+    <meta property="og:image" content="https://janward.github.io/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Canvas Node Network -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" aria-label="Kembali ke bagian awal">
+                <!-- <span class="logo-icon">&lt;/&gt;</span>-->
+                <img src="Logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Janward.<span>Alfredo</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li data-i18n="navHome"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li data-i18n="navAbout"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li data-i18n="navSkills"><a href="keahlian.html" class="nav-link active">Keahlian</a></li>
+                    <li data-i18n="navExperience"><a href="pengalaman.html" class="nav-link">Pengalaman</a></li>
+                    <li data-i18n="navProjects"><a href="proyek.html" class="nav-link">Proyek</a></li>
+                    <li data-i18n="navTerminal"><a href="terminal.html" class="nav-link">CLI Terminal</a></li>
+                    <li data-i18n="navContact"><a href="kontak.html" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Keahlian Teknis</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Card 1: Network & Security -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-cyan">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="skillCard1Title">Network &amp; MikroTik</h3>
+                        <p data-i18n="skillCard1Desc">Instalasi, konfigurasi, dan troubleshooting jaringan LAN, serta konfigurasi MikroTik meliputi subnetting, VLAN, port forwarding, dan firewall. Membangun link wireless point-to-point antar gedung sejauh ±5 km menggunakan perangkat Ubiquiti.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>MikroTik, VLAN, Firewall, Ubiquiti (Rocket M5/M2, LiteBeam AC)</span>
+                                <span>Advanced · 3+ yrs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Virtualization -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-blue">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11h-6m6 0a2 2 0 012 2v6a2 2 0 01-2 2h-6a2 2 0 01-2-2v-6a2 2 0 012-2m6 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="skillCard2Title">Virtualisasi</h3>
+                        <p data-i18n="skillCard2Desc">Mengelola mesin virtual produksi dengan Proxmox VE dan VirtualBox (host Windows Server) selama 2 tahun terakhir. Hyper-V digunakan untuk menguji OS dan aplikasi sebelum masuk produksi, karena kurang efisien terhadap sumber daya hardware.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>Proxmox VE, Hyper-V, VirtualBox</span>
+                                <span>Intermediate · 2 yrs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Windows Server & Storage -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-emerald">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="skillCard3Title">Server &amp; File Sharing</h3>
+                        <p data-i18n="skillCard3Desc">Setup dan administrasi folder sharing berbasis Windows Server maupun OpenMediaVault (OMV) selama 3 tahun, untuk sekitar 90 pengguna di kantor pusat dan beberapa cabang, dengan hak akses dikelompokkan per divisi. Juga mengelola layanan penyimpanan internal Nextcloud dan Immich.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>Windows Server, OMV, Nextcloud, Immich</span>
+                                <span>Advanced · 3 yrs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: CCTV & Infrastructure -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-green">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Security Systems (CCTV)</h3>
+                        <p data-i18n="skillCard4Desc">Memahami sistem CCTV analog maupun digital: kabel coaxial dan UTP, DVR dan NVR, perancangan topologi kabel, serta pemeliharaan fisik dan jaringan. Mengonlinekan DVR CCTV analog melalui jaringan selama DVR memiliki port ethernet, serta berbagi penyimpanan DVR bila perangkat mendukung.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>CCTV Analog &amp; IP, DVR/NVR, Coaxial/UTP · 120+ titik</span>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Automation Backup -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-blue">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 7.89M9 11l3 3L22 4"></path>
+                            </svg>
+                        </div>
+                        <h3>Backup &amp; Automation</h3>
+                        <p data-i18n="skillCard5Desc">Menjadwalkan backup otomatis dengan cron job (Linux) dan Task Scheduler (Windows). Perintah tugas disimpan dalam satu berkas script untuk mirroring ke storage atau folder tertentu, baik di PC itu sendiri maupun di jaringan.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>cron, Task Scheduler, Bash, PowerShell</span>
+                                <span>Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Disaster Recovery -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon text-cyan">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="skillCard6Title">Troubleshooting &amp; IT Support</h3>
+                        <p data-i18n="skillCard6Desc">Diagnosis dan perbaikan komputer, laptop, dan printer (inkjet, dot matrix multi-ply, hingga printer label/barcode), baik hardware maupun software, termasuk instalasi ulang Windows dan pemulihan akses saat password terlupa. Berpengalaman memulihkan sistem setelah insiden kelistrikan (UPS, power supply, HDD).</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-head">
+                                <span>Hardware, Windows, Printer, Recovery</span>
+                                <span>Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Janward Alfredo. Seluruh hak cipta dilindungi.</p>
+            <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JS | High Performance &amp; Light Weight</p>
+        </div>
+    </footer>
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>

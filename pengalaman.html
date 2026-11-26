@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <title>Riwayat Pengalaman | Janward Alfredo</title>
+    <link rel="canonical" href="https://janward.github.io/pengalaman.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Janward Alfredo">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Riwayat Pengalaman | Janward Alfredo">
+    <meta property="og:description" content="Riwayat pekerjaan Janward Alfredo sebagai SPV IT Network &amp; Hardware dan Guru TIK.">
+    <meta property="og:url" content="https://janward.github.io/pengalaman.html">
+    <meta property="og:image" content="https://janward.github.io/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Canvas Node Network -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" aria-label="Kembali ke bagian awal">
+                <!-- <span class="logo-icon">&lt;/&gt;</span>-->
+                <img src="Logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Janward.<span>Alfredo</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li data-i18n="navHome"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li data-i18n="navAbout"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li data-i18n="navSkills"><a href="keahlian.html" class="nav-link">Keahlian</a></li>
+                    <li data-i18n="navExperience"><a href="pengalaman.html" class="nav-link active">Pengalaman</a></li>
+                    <li data-i18n="navProjects"><a href="proyek.html" class="nav-link">Proyek</a></li>
+                    <li data-i18n="navTerminal"><a href="terminal.html" class="nav-link">CLI Terminal</a></li>
+                    <li data-i18n="navContact"><a href="kontak.html" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Riwayat Pengalaman</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="time-header">
+                                <span class="time-duration">Januari 2023 - Sekarang</span>
+                                <h3 class="experience-role">SPV IT Network &amp; Hardware</h3>
+                            </div>
+                            <h4 class="experience-company">PT Nico Urban Indonesia</h4>
+                            <ul class="experience-tasks">
+                        <li data-i18n="expTask1a">Mengelola infrastruktur IT perusahaan yang mencakup <strong>5+ server fisik dan 5+ mesin virtual</strong> (<strong>Proxmox VE</strong> dan VirtualBox pada host Windows Server) untuk mendukung operasional ±200 pengguna.</li>
+                        <li data-i18n="expTask1b">Menyiapkan dan mengadministrasikan <strong>folder sharing</strong> berbasis Windows Server dan OMV untuk sekitar 90 pengguna di kantor pusat dan beberapa cabang, dengan hak akses dikelompokkan per divisi, serta mengelola layanan <strong>Nextcloud</strong> dan <strong>Immich</strong>.</li>
+                        <li data-i18n="expTask1c">Mengonfigurasi <strong>MikroTik</strong> (subnetting, VLAN, port forwarding, firewall) serta menangani instalasi, perawatan, dan troubleshooting jaringan <strong>LAN</strong>.</li>
+                        <li data-i18n="expTask1d">Membangun <strong>link wireless point-to-point</strong> antar gedung sejauh ±5 km menggunakan perangkat Ubiquiti (Rocket M5/M2, LiteBeam AC), termasuk penyelarasan antena serta estimasi jarak dan ketinggian.</li>
+                        <li data-i18n="expTask1e">Memimpin instalasi, konfigurasi, dan perawatan <strong>CCTV analog dan IP (DVR/NVR) sebanyak 120+ titik</strong>, termasuk mengonlinekan DVR melalui jaringan untuk pemantauan terpusat.</li>
+                        <li data-i18n="expTask1f">Merancang <strong>backup otomatis</strong> dengan cron job (Linux) dan Task Scheduler (Windows) untuk mirroring data ke storage atau folder jaringan, serta menangani <strong>pemulihan data</strong> setelah insiden kelistrikan (UPS, power supply, HDD).</li>
+                        <li data-i18n="expTask1g">Memberikan <strong>IT support</strong> untuk komputer, laptop, dan printer (inkjet, dot matrix, label/barcode), mengelola pengadaan hardware dan koordinasi vendor, serta memimpin tim teknisi IT harian.</li>
+                    </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="time-header">
+                                <span class="time-duration">Oktober 2018 - Maret 2022</span>
+                                <h3 class="experience-role">Guru TIK (Teknologi Informasi &amp; Komunikasi)</h3>
+                            </div>
+                            <h4 class="experience-company">Yayasan Sultan Iskandar Muda Medan</h4>
+                            <ul class="experience-tasks">
+                                <li>Mengajar bidang studi TIK bagi siswa SMK dengan metode pembelajaran teoritis dan
+                                    berorientasi praktik jaringan dasar dan perakitan komputer.</li>
+                                <li>Mengelola infrastruktur laboratorium komputer sekolah yang mencakup pemeliharaan
+                                    &plusmn;40 unit komputer, server lab, dan konfigurasi jaringan lokal.</li>
+                                <li>Melakukan troubleshooting hardware, instalasi OS, pembagian alokasi IP address, dan
+                                    penyediaan akses internet lab komputer.</li>
+                                <li>Memberikan bantuan teknis (IT Support) untuk operasional internal yayasan termasuk
+                                    instalasi software administrasi dan pemeliharaan koneksi Wi-Fi lingkungan sekolah.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Janward Alfredo. Seluruh hak cipta dilindungi.</p>
+            <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JS | High Performance &amp; Light Weight</p>
+        </div>
+    </footer>
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>

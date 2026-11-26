@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <title>Kontak | Janward Alfredo</title>
+    <link rel="canonical" href="https://janward.github.io/kontak.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Janward Alfredo">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Kontak | Janward Alfredo">
+    <meta property="og:description" content="Hubungi Janward Alfredo untuk peluang karier dan diskusi infrastruktur IT.">
+    <meta property="og:url" content="https://janward.github.io/kontak.html">
+    <meta property="og:image" content="https://janward.github.io/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Canvas Node Network -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" aria-label="Kembali ke bagian awal">
+                <!-- <span class="logo-icon">&lt;/&gt;</span>-->
+                <img src="Logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Janward.<span>Alfredo</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li data-i18n="navHome"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li data-i18n="navAbout"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li data-i18n="navSkills"><a href="keahlian.html" class="nav-link">Keahlian</a></li>
+                    <li data-i18n="navExperience"><a href="pengalaman.html" class="nav-link">Pengalaman</a></li>
+                    <li data-i18n="navProjects"><a href="proyek.html" class="nav-link">Proyek</a></li>
+                    <li data-i18n="navTerminal"><a href="terminal.html" class="nav-link">CLI Terminal</a></li>
+                    <li data-i18n="navContact"><a href="kontak.html" class="nav-link active btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid grid-2">
+                    <!-- Direct Contacts -->
+                    <div class="contact-info animate-left">
+                        <h3>Hubungi Secara Langsung</h3>
+                        <p class="paragraph">Ada pertanyaan, peluang karier di bidang infrastruktur IT, atau sekadar ingin berdiskusi mengenai jaringan dan virtualisasi server? Anda bisa menghubungi saya
+                            melalui detail di bawah ini:</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon text-cyan">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email Resmi</h4>
+                                    <a href="mailto:ajanward@gmail.com">ajanward@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon text-blue">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Nomor Handphone / WA</h4>
+                                    <a href="https://wa.me/62895611554304?text=halo%20Janward,%20saya%20ingin%20berdiskusi%20mengenai%20"
+                                        target="_blank" rel="noopener noreferrer">0895-6115-54304</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon text-emerald">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Lokasi Domisili</h4>
+                                    <a href="https://maps.app.goo.gl/bhtS1P35WSdB9VKb7" target="_blank" rel="noopener noreferrer">Cengkareng,
+                                        Jakarta Barat, DKI Jakarta</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon text-blue">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/janward-alfredo-2741981b7/"
+                                        target="_blank" rel="noopener noreferrer">Janward Alfredo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container animate-right">
+                        <form id="contact-form" class="glass-form">
+                            <div class="form-group">
+                                <label for="form-name">Nama Lengkap</label>
+                                <input type="text" id="form-name" data-i18n="formNamePlaceholder" placeholder="Masukkan nama lengkap Anda" required
+                                    autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Pesan Anda</label>
+                                <textarea id="form-message" rows="5" data-i18n="formMessagePlaceholder"
+                                    placeholder="Tuliskan detail pesan atau pertanyaan Anda di sini..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <svg class="icon-btn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                                Kirim Pesan
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Janward Alfredo. Seluruh hak cipta dilindungi.</p>
+            <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JS | High Performance &amp; Light Weight</p>
+        </div>
+    </footer>
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>

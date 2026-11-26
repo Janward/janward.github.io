@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <title>CLI Terminal Interaktif | Janward Alfredo</title>
+    <link rel="canonical" href="https://janward.github.io/terminal.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Janward Alfredo">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="CLI Terminal Interaktif | Janward Alfredo">
+    <meta property="og:description" content="Konsol terminal interaktif untuk menjelajahi profil Janward Alfredo.">
+    <meta property="og:url" content="https://janward.github.io/terminal.html">
+    <meta property="og:image" content="https://janward.github.io/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Background Canvas Node Network -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo" aria-label="Kembali ke bagian awal">
+                <!-- <span class="logo-icon">&lt;/&gt;</span>-->
+                <img src="Logo.png" alt="Logo" class="logo-icon">
+                <span class="logo-text">Janward.<span>Alfredo</span></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li data-i18n="navHome"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li data-i18n="navAbout"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li data-i18n="navSkills"><a href="keahlian.html" class="nav-link">Keahlian</a></li>
+                    <li data-i18n="navExperience"><a href="pengalaman.html" class="nav-link">Pengalaman</a></li>
+                    <li data-i18n="navProjects"><a href="proyek.html" class="nav-link">Proyek</a></li>
+                    <li data-i18n="navTerminal"><a href="terminal.html" class="nav-link active">CLI Terminal</a></li>
+                    <li data-i18n="navContact"><a href="kontak.html" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" aria-label="Pilih bahasa" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="terminal-section" class="terminal-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Interactive Network Console (CLI)</h2>
+                    <p class="section-subtitle">Masukkan perintah terminal untuk berinteraksi langsung dengan database
+                        portofolio saya.</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-titlebar">
+                        <div class="terminal-buttons">
+                            <span class="close-btn"></span>
+                            <span class="min-btn"></span>
+                            <span class="max-btn"></span>
+                        </div>
+                        <span class="terminal-title-text">root@janward-server:~</span>
+                        <span class="terminal-connection">ssh active (port 22)</span>
+                    </div>
+                    <div class="terminal-screen" id="terminal-screen">
+                        <div class="terminal-output" id="terminal-output">
+                            <div class="terminal-line text-emerald">Connecting to janward-alfredo.id [192.168.1.100] via
+                                SSH...</div>
+                            <div class="terminal-line text-green">Connection Established. Welcome to Janward's Server
+                                Console v1.5.0!</div>
+                            <div class="terminal-line">Ketik <span class="text-cyan">help</span> untuk melihat daftar
+                                perintah yang didukung.</div>
+                            <div class="terminal-line">&nbsp;</div>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">guest@janward-cli:~$</span>
+                            <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Janward Alfredo. Seluruh hak cipta dilindungi.</p>
+            <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JS | High Performance &amp; Light Weight</p>
+        </div>
+    </footer>
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>

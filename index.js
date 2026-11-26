@@ -58,30 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
         ketik();
     }
     // jalankan pertama kali
-    janwardMotivasiElement.textContent = janwardKalimat[janwardIndexKalimat];
+    if (janwardMotivasiElement) janwardMotivasiElement.textContent = janwardKalimat[janwardIndexKalimat];
     janwardIndexKalimat++;
 
     // ganti kalimat setiap 3 detik
-    setInterval(janwardGantiKalimat, 10000);
+    if (janwardMotivasiElement) setInterval(janwardGantiKalimat, 10000);
 
-    // Active link highlighting on scroll
-    const sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
+    // Tandai menu aktif sesuai halaman saat ini
+    const currentPage = location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === currentPage);
     });
 
 
